@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:id="@+id/main"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/username_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/username_textfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username:"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        app:counterOverflowTextAppearance="@style/CharacterOverFlow"
+        android:id="@+id/password_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_textinputlayout"
+        android:layout_marginBottom="8dp"
+        app:passwordToggleEnabled="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="0dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/password_textfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password:"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+
+</RelativeLayout>
